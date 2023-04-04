@@ -15,21 +15,21 @@
 
 <body>
   <nav style="background-color:coral !important;" class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Cadrastre-se!</span>
-        </div>
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Cadrastre-se!</span>
+    </div>
   </nav>
   <form action="{% url 'listagem_usuarios' %}" method="post">
-        {% csrf_token %}
-      <div style="text-align: center;" class="container">
-        <h1>Cadastro de Usuários</h1>
-        Nome <input name="nome" class="form-control-sm" type="text">
-        Idade <input name="idade" class="form-control-sm" type="text"> 
-        <button class="form-control-sm">Enviar</button>
-      </div>
-    </form>
+    {% csrf_token %}
+    <div style="text-align: center;" class="container">
+      <h1>Cadastro de Usuários</h1>
+      Nome <input name="nome" class="form-control-sm" type="text">
+      Idade <input name="idade" class="form-control-sm" type="text"> 
+      <button class="form-control-sm">Enviar</button>
+    </div>
+  </form>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
